@@ -1,0 +1,61 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Celestial Stats
+  version: 0.1
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Contributing
+      url: /cs_overview_contributing.html
+      output: web, pdf
+
+  - title: Front-End Architecture
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /cs_frontend_overview.html
+      output: web, pdf
+
+  - title: Back-End Architecture
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /cs_backend_overview.html
+      output: web, pdf
+
+  - title: Future
+    output: web, pdf
+    folderitems:
+
+    - title: Architecture Changes
+      url: /cs_future_architecture_changes.html
+      output: web, pdf
+
+    - title: Statistic Ideas
+      url: /cs_future_statistic_ideas.html
+      output: web, pdf
