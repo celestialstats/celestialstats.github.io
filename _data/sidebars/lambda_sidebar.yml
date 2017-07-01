@@ -26,3 +26,10 @@ entries:
     - title: Lambda Home
       url: /lambda_landing_page.html
       output: web
+
+  - title: Functions
+    output: web, pdf
+    folderitems:
+    - title: Log Replayer
+      url: /lambda_functions_log_replayer.html
+      output: web

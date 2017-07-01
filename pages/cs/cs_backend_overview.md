@@ -9,6 +9,10 @@ permalink: cs_backend_overview.html
 folder: cs
 ---
 
-No architecture information here yet... Soon!
+Outdated stuff:
+
+{% include image.html file="pages/cs/architecture_outdated.png" url="/images/pages/cs/architecture_outdated.png" alt="Outdated Architecture" caption="Slightly out of date future architecture diagram." %}
+
+{% include image.html file="pages/cs/data_workflow_outdated.png" url="/images/pages/cs/data_workflow_outdated.png" alt="Outdated Architecture" caption="Slightly out of date future architecture diagram." %}
 
 {% include links.html %}
