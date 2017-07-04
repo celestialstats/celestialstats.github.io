@@ -22,6 +22,14 @@ The old way of thinking. New way I think doesn't involve ever stopping the strea
   * At this point Lambda should start triggering and consuming the stream and marking lines as processed.
 * Replay necessary logs into incomming logs with PROCESSED=FALSE and ARCHIVED=TRUE
 
+
+* Write Timestamp CUTOFF_TS to a DynamoDB "Meta" table
+* Wait a few minutes for any currently processing nodes to finish
+* Force Archive all processed log entries
+* Trigger log_replayer
+
+
+
 ## log_replayer
 ```
 Clear Stats tables
@@ -43,6 +51,7 @@ If replay trigger:
 	Set Tag STATE_CHANGE = [Current Time]
 	while >= 30sec left in execution:
 		read from S3 starting at REPLAY_LINE and calculate stats
+			ignore all lines after CUTOFF_TS from "Meta" table
 		if done with file
 			local var FINISHED = true
 			break
