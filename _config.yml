@@ -12,7 +12,7 @@ site_title: The Celestial Stats Project
 company_name: The Celestial Stats Project
 # this appears in the footer
 
-github_editme_path: celestialstats/celestialstats.github.io/
+github_editme_path: celestialstats/celestialstats.github.io/tree/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname: 
